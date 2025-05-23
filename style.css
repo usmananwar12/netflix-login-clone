@@ -1,0 +1,64 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    width: 120px;
+    height: auto;
+    margin-left: 55px;
+    margin-top: 2px;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.higher{
+    position: relative;
+    z-index: 3;
+}
+
+#signin{
+    margin-top: 10px;
+    max-width:350px;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+#signin h2{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.box{
+    margin: 0 auto;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+}
+
+input::placeholder{
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
